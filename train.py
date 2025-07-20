@@ -41,7 +41,7 @@ def main():
     use_cuda = torch.cuda.is_available()
     device = torch.device("cuda" if use_cuda else "cpu")
 
-    train_kwargs = {'batch_size': 64}
+    train_kwargs = {'batch_size': 64, 'shuffle': True}
     test_kwargs = {'batch_size': 1000}
 
     # -----------
