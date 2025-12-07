@@ -21,7 +21,7 @@ class PaintApp:
         # -----------
         # Brush Size Slider
         # -----------
-        self.brush_size_var = tk.IntVar(value=16)  # default value = 16
+        self.brush_size_var = tk.IntVar(value=12)  # default value = 12
         self.color = "black"
 
         # Create a Scale widget to let the user adjust brush size

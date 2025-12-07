@@ -1,0 +1,20 @@
+[project]
+name = "mnist-digit-prediction"
+version = "0.1.0"
+description = "MNIST digit prediction with web UI and training controls"
+requires-python = ">=3.9"
+dependencies = [
+    "torch",
+    "torchvision",
+    "matplotlib",
+    "pillow",
+    "numpy",
+    "Flask==2.2.5",
+    "Werkzeug<3.0",
+    "threadpoolctl",
+    "markdown",
+]
+
+[tool.uv]
+package = true
+

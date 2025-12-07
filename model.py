@@ -34,4 +34,5 @@ class SimpleCNN(nn.Module):
         x = self.dropout2(x)
         x = self.fc2(x)
 
-        return F.log_softmax(x, dim=1)
+        # Return logits; losses/softmax handled externally.
+        return x

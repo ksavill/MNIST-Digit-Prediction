@@ -22,10 +22,12 @@ def center_image(image):
 def preprocess_image(image):
     # First center the drawn digit.
     centered = center_image(image)
+    # Invert to match MNIST convention (white digit on black background).
+    inverted = ImageChops.invert(centered)
     transform = transforms.Compose([
         transforms.Resize((28, 28)),
         transforms.ToTensor(),
         transforms.Normalize((0.1307,), (0.3081,))
     ])
-    img_tensor = transform(centered).unsqueeze(0)  # Add batch dimension
+    img_tensor = transform(inverted).unsqueeze(0)  # Add batch dimension
     return img_tensor

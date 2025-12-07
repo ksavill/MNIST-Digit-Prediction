@@ -1,0 +1,34 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+.env/
+
+# OS / IDE noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Training artifacts
+model_best.pth
+model_final.pth
+*.pth
+
+# Datasets / downloads
+data/
+
+# Logs / plots
+*.log
+*.png
+*.svg
+
+# uv
+.python-version
+.ruff_cache/
+*.egg-info/
+

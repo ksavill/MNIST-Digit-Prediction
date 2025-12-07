@@ -2,3 +2,9 @@ torch
 torchvision
 matplotlib
 pillow
+numpy
+# Pin Flask to avoid werkzeug incompatibility (url_quote removal in Werkzeug 3)
+Flask==2.2.5
+Werkzeug<3.0
+threadpoolctl
+markdown
